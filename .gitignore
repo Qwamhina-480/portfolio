@@ -1,6 +1,7 @@
 # Ignore virtual environment
 myvenv/
 
+myvev
 # Python cache
 __pycache__/
 *.pyc
