@@ -1,0 +1,16 @@
+# Ignore virtual environment
+myvenv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.venv
+
+# OS specific
+.DS_Store
+Thumbs.db

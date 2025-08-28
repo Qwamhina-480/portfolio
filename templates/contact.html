@@ -1,0 +1,32 @@
+<!-- templates/contact.html -->
+{% extends "base.html" %}
+
+{% block title %}Contact Me - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-content">
+        <p>If you'd like to discuss a project or have any questions, feel free to reach out to me.</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> felixbaidoo557@gmail.com</p>
+            <p><strong>Phone:</strong> (+233)0 593 183 525</p>
+        </div>
+        <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

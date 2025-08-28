@@ -1,0 +1,19 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block title %}About Me - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Hello! I'm addressed by the name Felix Kwamina Baidoo, a web developer, ML engineer and a data scientist with 2 years of experience, building responsive and user-friendly websites. I specialize in Python Flask, and Django development and have a strong foundation in HTML, CSS, and JavaScript.</p>
+            <p>I like to read tech blogs a lot when i'm not coding, I talk to computer more than I talk to friends, and also find solving tech problems more interesting</p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/back.jpg') }}" alt="About Me Image">
+        </div>
+    </div>
+</section>
+{% endblock %}
