@@ -311,3 +311,8 @@ footer {
         margin-left: 0;
     }
 }
+
+.flashes{
+    color: red;
+    font-weight: 20px;
+}
