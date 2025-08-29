@@ -18,7 +18,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = ''     # replace with your Gmail
+app.config['MAIL_USERNAME'] =  os.getenv("MAIL_USERNAME")    # replace with your Gmail
 app.config['MAIL_PASSWORD'] =  os.getenv("MAIL_PASSWORD")      # use App Password, not normal password
 app.config['MAIL_DEFAULT_SENDER'] =  os.getenv("MAIL_USERNAME")
 
